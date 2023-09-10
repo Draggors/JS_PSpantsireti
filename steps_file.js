@@ -8,6 +8,7 @@ module.exports = function() {
   return actor({
 
     Login(user) {
+      this.amOnPage('/');
       this.click(signInButton);
       this.fillField(email, user.email);
       this.fillField(password, user.password);
