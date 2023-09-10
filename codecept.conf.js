@@ -32,6 +32,10 @@ exports.config = {
     accountPage: "./pages/account.js",
 
     confirmRegPage: "./pages/confirmReg.js",
+
+    confirmPage: "./pages/confirm.js",
+
+    finalPage: "./pages/final.js",
   },
   name: 'JS_PSpantsireti'
 }

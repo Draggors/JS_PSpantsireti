@@ -11,7 +11,7 @@ const NEW_USER = {
 
 Feature('register');
 
-Scenario('Registration', ({ I, BasePage, account, confirmReg}) => {
+Scenario('Registration', ({ I, basePage, accountPage, finalPage, }) => {
 I.amOnPage('http://opencart.qatestlab.net/index.php');
 
 basePage.clickMyAccount();
@@ -30,8 +30,8 @@ accountPage.fillNewUserForm(NEW_USER);
 //I.fillField({ xpath: '//*[@id="input-password"]'}, "J0sEph12345");
 //I.fillField({ xpath: '//*[@id="input-confirm"]'}, "J0sEph12345");
 
-confirmReg.confirmButton();
-confirmReg.continueReg();
+finalPage.privacyButton();
+finalPage.continueReg();
 
 //I.click({xpath: '//*[@id="content"]/form/div/div/input[1]'});
 //I.click({xpath: '//*[@id="content"]/form/div/div/input[2]'});
@@ -39,6 +39,5 @@ confirmReg.continueReg();
 const regTitleText = 'Your Account Has Been Created!'
 accountPage.header
 //I.seeTextEquals(regTitleText, {xpath: '//*[@id="content"]/h1'});
-pause();
 });
 
