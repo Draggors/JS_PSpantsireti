@@ -30,16 +30,14 @@ accountPage.fillNewUserForm(NEW_USER);
 //I.fillField({ xpath: '//*[@id="input-password"]'}, "J0sEph12345");
 //I.fillField({ xpath: '//*[@id="input-confirm"]'}, "J0sEph12345");
 
-//finalPage.privacyRadio();
+finalPage.clickPrivacy();
+finalPage.clickContinueButton();
 
-I.click({xpath: '//*[@id="content"]/form/div/div/input[1]'});
-finalPage.continueReg();
-
-
+//I.click({xpath: '//*[@id="content"]/form/div/div/input[1]'});
 //I.click({xpath: '//*[@id="content"]/form/div/div/input[2]'});
 
 const regTitleText = 'Your Account Has Been Created!';
-accountPage.header();
+accountPage.regTitleText();
 //I.seeTextEquals(regTitleText, {xpath: '//*[@id="content"]/h1'});
 });
 
