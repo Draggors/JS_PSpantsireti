@@ -1,5 +1,5 @@
 const NEW_USER = {
-    firstName: Joseph,
+    firstName: 'Joseph',
     lastName: 12345,
     email: Date.now() + '@gmail.com',
     telephone:"+380999999999",
