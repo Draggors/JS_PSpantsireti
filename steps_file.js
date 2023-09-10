@@ -1,6 +1,6 @@
 email = { css: "input-email" };
 password = { css: "input-password" };
-signInButton = { xpath: '//a[text = "Sign In"]' };
+signInButton = { xpath: '//a[text() = "Sign In"]' };
 LogInButton = { xpath: '//input[@type = "submit"]'};
 
 
