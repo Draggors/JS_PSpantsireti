@@ -36,6 +36,8 @@ exports.config = {
     confirmPage: "./pages/confirm.js",
 
     finalPage: "./pages/final.js",
+
+    productPage: "./pages/product.js",
   },
   name: 'JS_PSpantsireti'
 }

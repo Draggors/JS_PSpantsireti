@@ -8,8 +8,6 @@ Feature('Log In + Buy');
 Scenario('Log In', ({ I }) => {
 
     I.Login(USER);
-    pause();
-
 });
 
 Scenario('Buy Product', ({ I }) => {
