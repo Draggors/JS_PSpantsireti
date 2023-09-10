@@ -11,8 +11,8 @@ const NEW_USER = {
 
 Feature('register');
 
-Scenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
-I.amOnPage('http://opencart.qatestlab.net/index.php');
+Scenario.only('Registration', ({ I, basePage, accountPage, finalPage}) => {
+I.amOnPage('/');
 
 basePage.clickMyAccount();
 basePage.clickRegister();
@@ -41,6 +41,3 @@ accountPage.verifySuccessfullyReg();
 //I.seeTextEquals(regTitleText, {xpath: '//*[@id="content"]/h1'});
 });
 
-Scenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
-    
-});
