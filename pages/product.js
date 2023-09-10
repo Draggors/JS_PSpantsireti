@@ -14,5 +14,5 @@ module.exports = {
   selectSize() {
     I.click(SizeDropDown);
     I.click(SizeOption);
-  }
+  },
 }
