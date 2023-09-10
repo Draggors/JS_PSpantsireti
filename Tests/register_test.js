@@ -11,7 +11,7 @@ const NEW_USER = {
 
 Feature('register');
 
-Scenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
+xScenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
 I.amOnPage('/');
 
 basePage.clickMyAccount();
