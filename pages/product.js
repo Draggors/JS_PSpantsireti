@@ -22,6 +22,5 @@ module.exports = {
   selectSize() {
     I.click(this.SizeDropDown);
     I.click(this.SizeOption);
-    pause();
   },
 }
