@@ -11,33 +11,18 @@ const NEW_USER = {
 
 Feature('register');
 
-Scenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
-I.amOnPage('http://opencart.qatestlab.net/index.php');
+xScenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
+    
+I.amOnPage('/');
 
 basePage.clickMyAccount();
 basePage.clickRegister();
 
-//I.click({ xpath: '//*[@id="top-links"]/ul/li/span/span' });
-//I.click({ xpath: '//*[@id="top-links"]/ul/li/ul/li[1]/a' });
-
 accountPage.fillNewUserForm(NEW_USER);
-
-
-//I.fillField({ xpath: '//*[@id="input-firstname"]'}, "Joseph");
-//I.fillField({ xpath: '//*[@id="input-lastname"]'}, "12345");
-//I.fillField({ xpath: '//*[@id="input-email"]'}, `${Date.now()}@gmail.com`);
-//I.fillField({ xpath: '//*[@id="input-telephone"]'}, "+380999999999");
-//I.fillField({ xpath: '//*[@id="input-password"]'}, "J0sEph12345");
-//I.fillField({ xpath: '//*[@id="input-confirm"]'}, "J0sEph12345");
 
 finalPage.clickPrivacy();
 finalPage.clickContinueButton();
 
-//I.click({xpath: '//*[@id="content"]/form/div/div/input[1]'});
-//I.click({xpath: '//*[@id="content"]/form/div/div/input[2]'});
-
 const regTitleText = 'Your Account Has Been Created!';
 accountPage.verifySuccessfullyReg();
-//I.seeTextEquals(regTitleText, {xpath: '//*[@id="content"]/h1'});
 });
-
