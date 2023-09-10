@@ -2,11 +2,11 @@ const { I } = inject();
 
 module.exports = {
 
-  privacyButton: { xpath: '//*[@id="content"]/form/div/div/input[1]' },
+  privacyRadio: { xpath: '//*[@id="content"]/form/div/div/input[1]' },
   continueReg: { xpath: '//*[@id="content"]/form/div/div/input[2]' },
 
   clickPrivacy() {
-    I.click(this.privacyButton);
+    I.click(this.privacyRadio);
   },
 
   clickContinueButton() {
