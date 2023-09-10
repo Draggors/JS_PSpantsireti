@@ -9,8 +9,8 @@ module.exports = {
   priceText: { xpath: '/div/span[@class="price-new"]'},
 
   selectColor() {
-    I.click(this.ColorDropDown);
-    I.click(this.ColorOption);
+    I.click(this.colorDropDown);
+    I.click(this.colorOption);
   },
 
   async getProductPrice() {
