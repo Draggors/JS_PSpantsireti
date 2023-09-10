@@ -8,6 +8,8 @@ module.exports = {
   telephone: { xpath: '//*[@id="input-telephone"]' },
   password: { xpath: '//*[@id="input-password"]' },
   confirmPassword: { xpath: '//*[@id="input-confirm"]' },
+  privacyRadio: { xpath: '//*[@id="content"]/form/div/div/input[1]' },
+  continueReg: { xpath: '//*[@id="content"]/form/div/div/input[2]' },
 
   fillNewUserForm(user) {
     I.fillField(this.firstNameField, user.firstName);
@@ -21,6 +23,13 @@ module.exports = {
   verifySuccessfullyReg() {
     const regTitleText = 'Your Account Has Been Created!'
     I.seeTextEquals(regTitleText, this.header);
+  },
+  clickPrivacy() {
+    I.click(this.privacyRadio);
+  },
+
+  clickContinueButton() {
+    I.click(this.continueReg);
   },
   
 }
