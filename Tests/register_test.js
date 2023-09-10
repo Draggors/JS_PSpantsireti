@@ -11,17 +11,17 @@ const NEW_USER = {
 
 Feature('register');
 
-xScenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
+Scenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
 
-I.amOnPage('/');
+I.amOnPage('http://opencart.qatestlab.net/index.php');
 
 basePage.clickMyAccount();
 basePage.clickRegister();
 
 accountPage.fillNewUserForm(NEW_USER);
 
-finalPage.clickPrivacy();
-finalPage.clickContinueButton();
+accountPage.clickPrivacy();
+accountPage.clickContinueButton();
 
 const regTitleText = 'Your Account Has Been Created!';
 accountPage.verifySuccessfullyReg();
