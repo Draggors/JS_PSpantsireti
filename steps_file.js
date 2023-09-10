@@ -1,10 +1,10 @@
-email = { css: "input-email" };
-password = { css: "input-password" };
+email = { xpath: '//input[@id = "input-email"]' };
+password = { xpath: '//input[@id = "input-password"]' };
 signInButton = { xpath: '//a[text() = "Sign In"]' };
-LogInButton = { xpath: '//input[@type = "submit"]'};
+LogInButton = { xpath: '//input[@type = "submit"]' };
 
 
-module.exports = function() {
+module.exports = function () {
   return actor({
 
     Login(user) {
