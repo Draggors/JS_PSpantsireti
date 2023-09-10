@@ -14,9 +14,9 @@ Scenario('Buy Product', ({ I, productPage, }) => {
 
     I.Login(USER);
     I.amOnPage('http://opencart.qatestlab.net/index.php?route=product/product&product_id=44');
-    productPage.selectColor;
-    productPage.selectSize;
-    
+    productPage.selectColor();
+    productPage.selectSize();
+
     pause();
 
 });
