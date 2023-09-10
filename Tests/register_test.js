@@ -12,7 +12,7 @@ const NEW_USER = {
 Feature('register');
 
 xScenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
-    
+
 I.amOnPage('/');
 
 basePage.clickMyAccount();
