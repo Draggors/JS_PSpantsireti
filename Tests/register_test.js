@@ -37,7 +37,7 @@ finalPage.clickContinueButton();
 //I.click({xpath: '//*[@id="content"]/form/div/div/input[2]'});
 
 const regTitleText = 'Your Account Has Been Created!';
-accountPage.regTitleText();
+accountPage.verifySuccessfullyRe();
 //I.seeTextEquals(regTitleText, {xpath: '//*[@id="content"]/h1'});
 });
 
