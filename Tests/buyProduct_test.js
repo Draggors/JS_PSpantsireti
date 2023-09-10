@@ -17,6 +17,6 @@ Scenario('Buy Product', ({ I, productPage, }) => {
     productPage.selectColor();
     productPage.selectSize();
 
-    pause();
+  ;
 
 });
