@@ -9,8 +9,8 @@ const USER = {
     
 }
 
-Feature('register');
+Feature('Log In + Buy');
 
-Scenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
+Scenario('Log In, buy', ({ I, basePage, accountPage, finalPage}) => {
 
 });
