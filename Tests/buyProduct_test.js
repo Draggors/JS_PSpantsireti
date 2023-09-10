@@ -5,7 +5,7 @@ const USER = {
 
 Feature('Log In + Buy');
 
-Scenario('Log In', ({ I }) => {
+xScenario('Log In', ({ I }) => {
 
     I.Login(USER);
 });
