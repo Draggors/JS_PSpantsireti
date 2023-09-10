@@ -23,6 +23,5 @@ accountPage.fillNewUserForm(NEW_USER);
 accountPage.clickPrivacy();
 accountPage.clickContinueButton();
 
-const regTitleText = 'Your Account Has Been Created!';
 accountPage.verifySuccessfullyReg();
 });
