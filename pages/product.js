@@ -8,11 +8,11 @@ module.exports = {
   SizeOption: { xpath: '//label[text()="Size"]/following-sibling::div/ul/li[2]'},
 
   selectColor() {
-    I.click(ColorDropDown);
-    I.click(ColorOption);
+    I.click(this.ColorDropDown);
+    I.click(this.ColorOption);
   },
   selectSize() {
-    I.click(SizeDropDown);
-    I.click(SizeOption);
+    I.click(this.SizeDropDown);
+    I.click(this.SizeOption);
   },
 }
