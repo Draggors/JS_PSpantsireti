@@ -22,7 +22,9 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+
+    basePage: "./pages/BasePage.js",
   },
   name: 'JS_PSpantsireti'
 }
