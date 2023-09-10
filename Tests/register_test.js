@@ -11,7 +11,7 @@ const NEW_USER = {
 
 Feature('register');
 
-Scenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
+Scenario('Registration', ({ I, basePage, accountPage}) => {
 
 I.amOnPage('http://opencart.qatestlab.net/index.php');
 
