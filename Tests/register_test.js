@@ -41,3 +41,6 @@ accountPage.verifySuccessfullyReg();
 //I.seeTextEquals(regTitleText, {xpath: '//*[@id="content"]/h1'});
 });
 
+Scenario('Registration', ({ I, basePage, accountPage, finalPage}) => {
+    
+});

@@ -16,7 +16,7 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'http://localhost',
+      url: 'http://opencart.qatestlab.net/index.php',
       show: true,
       waitForNavigation: "networkidle",
       waitForTimeout: 5000,
